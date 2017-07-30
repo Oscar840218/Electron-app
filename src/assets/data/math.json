@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "question": "132 + 99 x 143 = ?",
+        "options": [ "33033", "14157", "14289", "18943"],
+        "hint": "都是11的倍數,先乘除後加減",
+        "answer": "14289",
+        "explain": "99 x 143 = 14157, 14157 + 132 = 14289"
+    },
+    {
+        "id": 2,
+        "question": "",
+        "options": [ "", "", "", ""],
+        "hint": "",
+        "answer": "",
+        "explain": ""
+    },
+    {
+        "id": 3,
+        "question": "",
+        "options": [ "", "", "", ""],
+        "hint": "",
+        "answer": "",
+        "explain": ""
+    },
+    {
+        "id": 4,
+        "question": "",
+        "options": [ "", "", "", ""],
+        "hint": "",
+        "answer": "",
+        "explain": ""
+    },
+    {
+        "id": 5,
+        "question": "",
+        "options": [ "", "", "", ""],
+        "hint": "",
+        "answer": "",
+        "explain": ""
+    },
+    {
+        "id": 6,
+        "question": "",
+        "options": [ "", "", "", ""],
+        "hint": "",
+        "answer": "",
+        "explain": ""
+    },
+    {
+        "id": 7,
+        "question": "",
+        "options": [ "", "", "", ""],
+        "hint": "",
+        "answer": "",
+        "explain": ""
+    },
+    {
+        "id": 8,
+        "question": "",
+        "options": [ "", "", "", ""],
+        "hint": "",
+        "answer": "",
+        "explain": ""
+    },
+    {
+        "id": 9,
+        "question": "",
+        "options": [ "", "", "", ""],
+        "hint": "",
+        "answer": "",
+        "explain": ""
+    },
+    {
+        "id": 10,
+        "question": "",
+        "options": [ "", "", "", ""],
+        "hint": "",
+        "answer": "",
+        "explain": ""
+    }
+]

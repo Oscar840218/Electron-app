@@ -1,0 +1,64 @@
+<div class="container">
+  <h1 class="page-header">Math</h1>
+</div>
+
+
+<div class="container">
+
+  <!-- Question area -->
+  <div class="well well-lg">
+    <h2>Q{{ counter }}: 1 + 1 = ?</h2>
+  </div>
+
+  <!-- Message area -->
+  <div class="show-hide-message">
+    <div [ngClass]="messageClass">
+      {{ message }}
+    </div>
+  </div>
+  
+  <!-- Hint area -->
+  <div class="panel panel-warning" *ngIf="hint">
+    <div class="panel-heading">
+      <h2 class="panel-title">Hint</h2>
+    </div>
+    <div class="panel-body">
+      Panel content
+    </div>
+  </div>
+
+  <!-- Answer area -->
+  <form [formGroup]="form" (submit)="onAnswerSubmit()">
+    <div [ngClass]="panelClass" *ngIf="!hint">
+      <div class="panel-heading">
+        <h2 class="panel-title">Answer</h2>
+      </div>
+      <div class="panel-body">
+        <div class="funkyradio">
+            <div class="funkyradio-primary radio">
+              <input type="radio" id="radio1" formControlName="option" value="1"/>
+              <label for="radio1"><h4>1</h4></label>
+            </div>
+            <div class="funkyradio-primary radio">
+              <input type="radio" id="radio2" formControlName="option" value="2"/>
+              <label for="radio2"><h4>2</h4></label>
+            </div>
+            <div class="funkyradio-primary radio">
+              <input type="radio" id="radio3" formControlName="option" value="3"/>
+              <label for="radio3"><h4>3</h4></label>
+            </div>
+            <div class="funkyradio-primary radio">
+              <input type="radio" id="radio4" formControlName="option" value="4"/>
+              <label for="radio4"><h4>4</h4></label>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Button area -->
+    <a class="btn btn-warning btn-lg" (click)="showHint()"><span class="glyphicon glyphicon-search"></span>&nbsp;{{ buttonHint }}</a>
+    <button [disabled]="!form.valid" type="submit" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-ok"></span>&nbsp;確認</button>
+    <a *ngIf="showNext" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-chevron-right"></span>&nbsp;繼續</a>
+  </form>
+  <br>
+  <br>
+</div>
